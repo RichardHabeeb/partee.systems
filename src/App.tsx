@@ -16,14 +16,14 @@ const App: Component = () => {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://api.convertkit.com/v4/forms/8428400/subscribe', {
+      const response = await fetch('https://api.convertkit.com/v3/forms/8428400/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          "X-Kit-Api-Key": 'QJnSfiLvI3oQROOSz4Fe9g',
         },
         body: JSON.stringify({
-          "email_account": email(),
+          "api_key": 'QJnSfiLvI3oQROOSz4Fe9g',
+          "email": email(),
         }),
       });
 

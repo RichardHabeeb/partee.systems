@@ -1,44 +1,16 @@
 import type { Component } from 'solid-js';
-import { createSignal } from 'solid-js';
+import { onMount } from 'solid-js';
 import styles from './App.module.css';
 
 const App: Component = () => {
-  const [email, setEmail] = createSignal('');
-  const [isSubmitting, setIsSubmitting] = createSignal(false);
-  const [submitStatus, setSubmitStatus] = createSignal<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: Event) => {
-    e.preventDefault();
-
-    if (!email()) return;
-
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      const response = await fetch('https://api.convertkit.com/v3/forms/8428400/subscribe', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          "api_key": 'QJnSfiLvI3oQROOSz4Fe9g',
-          "email": email(),
-        }),
-      });
-
-      if (response.ok) {
-        setSubmitStatus('success');
-        setEmail('');
-      } else {
-        setSubmitStatus('error');
-      }
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  onMount(() => {
+    // Load Kit embed script
+    const script = document.createElement('script');
+    script.async = true;
+    script.setAttribute('data-uid', 'f2db156550');
+    script.src = 'https://partee.kit.com/f2db156550/index.js';
+    document.head.appendChild(script);
+  });
 
   return (
     <div class={styles.container}>
@@ -54,36 +26,7 @@ const App: Component = () => {
           <p class={styles.description}>
             Join our mailing list to be the first to know when we launch.
           </p>
-          <form class={styles.form} onSubmit={handleSubmit}>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class={styles.emailInput}
-              value={email()}
-              onInput={(e) => setEmail(e.currentTarget.value)}
-              required
-              disabled={isSubmitting()}
-            />
-            <button
-              type="submit"
-              class={styles.submitButton}
-              disabled={isSubmitting() || !email()}
-            >
-              {isSubmitting() ? 'Submitting...' : 'Get Notified'}
-            </button>
-          </form>
-
-          {submitStatus() === 'success' && (
-            <p class={styles.successMessage}>
-              Thanks! You'll be the first to know when we launch.
-            </p>
-          )}
-
-          {submitStatus() === 'error' && (
-            <p class={styles.errorMessage}>
-              Something went wrong. Please try again.
-            </p>
-          )}
+          <div data-uid="f2db156550" data-format="inline" data-page="f2db156550"></div>
         </section>
       </main>
     </div>

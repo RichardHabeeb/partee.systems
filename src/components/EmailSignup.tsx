@@ -9,8 +9,8 @@ const EmailSignup: Component = () => {
     // Load Kit embed script into the form container
     const script = document.createElement('script');
     script.async = true;
-    script.setAttribute('data-uid', 'f2db156550');
-    script.src = 'https://partee.kit.com/f2db156550/index.js';
+    script.setAttribute("data-form", "79e5403e-7867-11f0-9a54-9729d708596a");
+    script.src = 'https://eocampaign1.com/form/79e5403e-7867-11f0-9a54-9729d708596a.js';
     formContainer.appendChild(script);
   });
 

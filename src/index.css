@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-    'Helvetica Neue', sans-serif;
+/* CSS Variables for Design System */
+:root {
+  --blue: #3D5B95;
+  --green: #428236;
+  --coral: #E16B4C;
+  --red: #A94322;
+  --magenta: #A55051;
+  --white: #F0F4E5;
+  --black: #212121;
+  --bg-primary: var(--white);
+  --text-primary: var(--black);
+  --text-contrast: var(--white);
+  --border: #d0d4c5;
+  --grid-gap: 2rem;
+  --max-width: 1000px;
+  --border-radius: 8px;
+}
+
+html, body {
+  font-family: "Libre Franklin", "Franklin Gothic",-apple-system,
+  	BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+  	'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Global reset and base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Courier, Consolas, 'Courier New', monospace;
 }
+

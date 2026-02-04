@@ -41,7 +41,7 @@ const App: Component = () => {
 
       <Section background="var(--bg-primary)">
 	  	<h2>Our vision and research</h2>
-		<p>Read our <a href="/assets/whitepaper-feb-2026.pdf">whitepaper</a>.</p>
+		<p>Read our <a href="/assets/whitepaper-feb-2026.pdf">white paper</a>.</p>
       </Section>
 
       <Section background="var(--bg-primary)">

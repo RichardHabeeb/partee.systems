@@ -18,23 +18,25 @@ const App: Component = () => {
       </Section>
 
       <Section background="var(--bg-primary)">
-	  	<div style="float:left; width: 50%; padding-right: var(--grid-gap);">
-	  		<h2>
-				PARTEE Containers unlock trustworthy physical AI in
-				a complex world.
-			</h2>
-		</div>
-	  	<div style="float:left; width: 50%; padding-left: var(--grid-gap); ">
-			<p>
-				Robotics and IoT are not built like the critical infrastructure
-				of the past.
-				Developers rapidly iterate on large software stacks that are
-				vulnerable to insider threats and supply chain attacks.
-				We created PARTEE because we're dedicated to providing day-one
-				security, privacy, and reliability for the next-generation of
-				robotics and IoT.
-			</p>
-		</div>
+        <div class={styles.twoColumn}>
+          <div>
+            <h2>
+              PARTEE Containers unlock trustworthy physical AI in
+              a complex world.
+            </h2>
+          </div>
+          <div>
+            <p>
+              Robotics and IoT are not built like the critical infrastructure
+              of the past.
+              Developers rapidly iterate on large software stacks that are
+              vulnerable to insider threats and supply chain attacks.
+              We created PARTEE because we're dedicated to providing day-one
+              security, privacy, and reliability for the next-generation of
+              robotics and IoT.
+            </p>
+          </div>
+        </div>
       </Section>
 
       <Section background="var(--bg-primary)">
@@ -57,14 +59,14 @@ const App: Component = () => {
       </Section>
 
       <Section background="var(--blue)" lightText>
-	  	<div style="display:flex; align-items:center; justify-content:center;">
-	  		<a href="https://ventures.yale.edu/2024-2025-roberts-awards">
-				<img src="src/assets/yvlogo.png" style="width: 250px; margin: 2rem;"/>
-			</a>
-			<a href="https://www.darpa.mil/research/programs/verified-security-and-performance-enhancement-of-large-legacy-software">
-				<img src="src/assets/darpa.png" style="width: 150px; margin 2rem;"/>
-			</a>
-		</div>
+        <div class={styles.supporters}>
+          <a href="https://ventures.yale.edu/2024-2025-roberts-awards">
+            <img src="src/assets/yvlogo.png" style="width: 250px;"/>
+          </a>
+          <a href="https://www.darpa.mil/research/programs/verified-security-and-performance-enhancement-of-large-legacy-software">
+            <img src="src/assets/darpa.png" style="width: 150px;"/>
+          </a>
+        </div>
       </Section>
 
       <Section background="var(--bg-primary)">

@@ -41,7 +41,7 @@ const App: Component = () => {
 
       <Section background="var(--bg-primary)">
 	  	<h2>Our vision and research</h2>
-		<p>Read our <a href="src/assets/whitepaper-feb-2026.pdf">whitepaper</a>.</p>
+		<p>Read our <a href="/assets/whitepaper-feb-2026.pdf">whitepaper</a>.</p>
       </Section>
 
       <Section background="var(--bg-primary)">
@@ -61,10 +61,10 @@ const App: Component = () => {
       <Section background="var(--blue)" lightText>
         <div class={styles.supporters}>
           <a href="https://ventures.yale.edu/2024-2025-roberts-awards">
-            <img src="src/assets/yvlogo.png" style="width: 250px;"/>
+            <img src="/assets/yvlogo.png" style="width: 250px;"/>
           </a>
           <a href="https://www.darpa.mil/research/programs/verified-security-and-performance-enhancement-of-large-legacy-software">
-            <img src="src/assets/darpa.png" style="width: 150px;"/>
+            <img src="/assets/darpa.png" style="width: 150px;"/>
           </a>
         </div>
       </Section>

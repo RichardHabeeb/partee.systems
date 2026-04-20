@@ -8,9 +8,9 @@
 
 .noPaddingBottom {
   padding-bottom: 0;
-
 }
 
-.lightText, .lightText a {
+.lightText,
+.lightText a {
   color: var(--text-contrast);
 }

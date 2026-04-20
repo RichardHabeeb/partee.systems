@@ -1,6 +1,6 @@
-import type { Component } from 'solid-js';
-import styles from './Nav.module.css';
-import Container from './Container';
+import type { Component } from "solid-js";
+import styles from "./Nav.module.css";
+import Container from "./Container";
 
 const Nav: Component = () => {
   return (
@@ -9,7 +9,8 @@ const Nav: Component = () => {
         <div class={styles.navContent}>
           <div class={styles.logo}></div>
           <ul class={styles.navList}>
-            <li><a href="https://github.com/CertiKOS/PARTEE">Github</a></li>
+            <li>
+            </li>
           </ul>
         </div>
       </Container>

@@ -7,10 +7,12 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "format": "prettier --write ."
   },
   "license": "MIT",
   "devDependencies": {
+    "prettier": "3.8.1",
     "typescript": "^5.7.2",
     "vite": "^6.0.0",
     "vite-plugin-solid": "^2.11.6"

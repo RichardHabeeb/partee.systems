@@ -1,6 +1,6 @@
-import type { Component, JSX } from 'solid-js';
-import styles from './Section.module.css';
-import Container from './Container';
+import type { Component, JSX } from "solid-js";
+import styles from "./Section.module.css";
+import Container from "./Container";
 
 interface SectionProps {
   children: JSX.Element;
@@ -13,12 +13,10 @@ interface SectionProps {
 const Section: Component<SectionProps> = (props) => {
   return (
     <section
-      class={`${styles.section} ${props.noPaddingBottom ? styles.noPaddingBottom : ''} ${props.lightText ? styles.lightText : ''} ${props.class || ''}`}
-      style={{ 'background-color': props.background }}
+      class={`${styles.section} ${props.noPaddingBottom ? styles.noPaddingBottom : ""} ${props.lightText ? styles.lightText : ""} ${props.class || ""}`}
+      style={{ "background-color": props.background }}
     >
-      <Container>
-        {props.children}
-      </Container>
+      <Container>{props.children}</Container>
     </section>
   );
 };

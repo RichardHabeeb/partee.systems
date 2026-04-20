@@ -1,29 +1,28 @@
-
 /* Signup section */
 .signup {
-	display: flex;
-	align-items: center;
-	justify-content: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .signup input[type="email"] {
-	font-size: 1rem;
-	padding: 0.25rem 0.5rem;
-	margin-right: 0.5rem;
-	border: 1px solid var(--black);
-	color: var(--black);
-	background-color: var(--white);
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .signup button {
-	font-size: 1rem;
-	padding: 0.25rem 0.5rem;
-	border: 1px solid var(--black);
-	color: var(--black);
-	background-color: var(--white);
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--black);
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .error {
-	color: var(--red);
-	font-style:italic;
+  color: var(--red);
+  font-style: italic;
 }

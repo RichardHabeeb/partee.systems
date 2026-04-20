@@ -1,11 +1,11 @@
 /* CSS Variables for Design System */
 :root {
-  --blue: #3D5B95;
+  --blue: #3d5b95;
   --green: #428236;
-  --coral: #E16B4C;
-  --red: #A94322;
-  --magenta: #A55051;
-  --white: #F0F4E5;
+  --coral: #e16b4c;
+  --red: #a94322;
+  --magenta: #a55051;
+  --white: #f0f4e5;
   --black: #212121;
   --bg-primary: var(--white);
   --text-primary: var(--black);
@@ -16,10 +16,22 @@
   --border-radius: 8px;
 }
 
-html, body {
-  font-family: "Libre Franklin", "Franklin Gothic",-apple-system,
-  	BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
-  	'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+html,
+body {
+  font-family:
+    "Libre Franklin",
+    "Franklin Gothic",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-primary);
@@ -36,6 +48,5 @@ html, body {
 }
 
 code {
-  font-family: source-code-pro, Courier, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Courier, Consolas, "Courier New", monospace;
 }
-
